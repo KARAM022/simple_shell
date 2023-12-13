@@ -11,8 +11,8 @@
 #include <sys/stat.h>
 
 /**
-* Da_ta_s - khkh 
-*/
+ * Da_ta_s - khkh 
+ */
 
 typedef struct
 {
@@ -23,8 +23,8 @@ typedef struct
 } Da_ta_s;
 
 /**
-* EGETENV - khkh 
-*/
+ * EGETENV - khkh 
+ */
 
 typedef struct
 {
