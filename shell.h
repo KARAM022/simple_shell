@@ -11,11 +11,11 @@
 #include <sys/stat.h>
 
 /**
- * struct Da_ta_s - khk
- * @line_buff:ljlj
- * @input: khkh
- * @status: khkh
- * @count: khkh
+ * struct Da_ta_s - struct
+ * @line_buff: store inpute line
+ * @input: arry of token input
+ * @status: current status code of the shell program
+ * @count: counter for the number of input lines processed
  */
 
 typedef struct Da_ta_s
@@ -27,7 +27,7 @@ typedef struct Da_ta_s
 } Da_ta_s;
 
 /**
- * struct EGETENV - khkh
+ * struct EGETENV - struct
  * @tmp: Temp string
  * @key: Key from env
  * @value: Value from env
@@ -37,11 +37,11 @@ typedef struct Da_ta_s
 
 typedef struct EGETENV
 {
-	char *tmp;   /* Temp string */
-	char *key;   /* Key from env */
-	char *value; /* Value from env */
-	char *env;   /* Env var value */
-	int i;	   /* Loop counter */
+	char *tmp;   
+	char *key;
+	char *value;
+	char *env;
+	int i;
 } EGETENV;
 
 #define PRINT_ERROR(name, index, cmd)\
