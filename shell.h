@@ -16,6 +16,7 @@
  * @input: Pointer to an array of strings.
  * @status: Status indicator.
  * @count: Count or quantity.
+ * Description: khhk
  */
 
 typedef struct
@@ -33,6 +34,7 @@ typedef struct
  * @env: Status indicator.
  * @value: Count or quantity.
  * @i: Count or quantity.
+ * Description: khhk
  */
 
 typedef struct
