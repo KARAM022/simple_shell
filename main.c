@@ -10,6 +10,7 @@
 int main(int ac, char **av)
 {
 	Da_ta_s Dat_a;
+    
 	Dat_a.line_buff = NULL;
 	Dat_a.input = NULL;
 	Dat_a.status = 0;
@@ -20,7 +21,6 @@ int main(int ac, char **av)
 	while (true)
 	{
 		Dat_a.line_buff = readline();
-
 		if (!Dat_a.line_buff)
 		{
 			if (isatty(2))
@@ -30,7 +30,6 @@ int main(int ac, char **av)
 
 		Dat_a.count++;
 		Dat_a.input = _tokenit(Dat_a.line_buff);
-        
 		if (Dat_a.input)
 			Dat_a.status = h_built_in(Dat_a.input, av, Dat_a.count, Dat_a.status);
 	}
