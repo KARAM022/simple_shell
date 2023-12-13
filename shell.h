@@ -65,4 +65,6 @@ void env_f(char **command);
  * main: 1
  * readline: 0
  * token: 0
+ * builtin:0
+ * 
 */
