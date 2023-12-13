@@ -16,7 +16,7 @@ char *pth(char *FCDM, char *D, const char *inputcommand, char *PENVTH)
 
             if (stat(FCDM, &st) == 0)
             {
-                free(PENVTH);
+                // free(PENVTH);
                 return (FCDM);
             }
 
