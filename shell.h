@@ -11,10 +11,14 @@
 #include <sys/stat.h>
 
 /**
- * betty Da_ta_s
+ * struct Da_ta_s - khk
+ * @line_buff:ljlj
+ * @input: khkh
+ * @status: khkh
+ * @count: khkh
  */
 
-typedef struct
+typedef struct Da_ta_s
 {
 	char *line_buff;
 	char **input;
@@ -23,10 +27,15 @@ typedef struct
 } Da_ta_s;
 
 /**
- * betty EGETENV
+ * struct EGETENV - khkh
+ * @tmp: Temp string
+ * @key: Key from env
+ * @value: Value from env
+ * @env: Env var value
+ * @i: Loop counter
  */
 
-typedef struct
+typedef struct EGETENV
 {
 	char *tmp;   /* Temp string */
 	char *key;   /* Key from env */
