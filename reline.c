@@ -25,4 +25,4 @@ char *readline(void)
 	}
 
 	return (line);
-
+}
