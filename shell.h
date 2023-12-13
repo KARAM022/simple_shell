@@ -11,12 +11,13 @@
 #include <sys/stat.h>
 
 /**
- * typedef struct Da_ta_s - Represents data used in a shell application.
+ * struct Da_ta_s - Represents data used in a shell application.
  * @line_buff: Pointer to a line buffer or string.
  * @input: Pointer to an array of strings.
  * @status: Status indicator.
  * @count: Count or quantity.
- * Description: khhk
+ * 
+ * Description: This structure holds data used in a shell application.
  */
 
 typedef struct
