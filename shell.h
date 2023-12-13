@@ -11,29 +11,29 @@
 #include <sys/stat.h>
 
 typedef struct {
-    char *line_buff;
-    char **input;
-    int status;
-    int count;
+	char *line_buff;
+	char **input;
+	int status;
+	int count;
 } Da_ta_s;
 
 typedef struct {
-    char *tmp;  /* Temp string */
-    char *key;  /* Key from env */
-    char *value;  /* Value from env */
-    char *env;  /* Env var value */
-    int i;  /* Loop counter */
+	char *tmp;  /* Temp string */
+	char *key;  /* Key from env */
+	char *value;  /* Value from env */
+	char *env;  /* Env var value */
+	int i;  /* Loop counter */
 } EGETENV;
 
 #define PRINT_ERROR(name, index, cmd) \
-    do { \
-        write(STDERR_FILENO, name, _strlen(name)); \
-        write(STDERR_FILENO, ": ", 2); \
-        write(STDERR_FILENO, index, _strlen(index)); \
-        write(STDERR_FILENO, ": ", 2); \
-        write(STDERR_FILENO, cmd, _strlen(cmd)); \
-        write(STDERR_FILENO, " not found \n", _strlen(" not found\n") +1); \
-    } while (0)
+	do { \
+		write(STDERR_FILENO, name, _strlen(name)); \
+		write(STDERR_FILENO, ": ", 2); \
+		write(STDERR_FILENO, index, _strlen(index)); \
+		write(STDERR_FILENO, ": ", 2); \
+		write(STDERR_FILENO, cmd, _strlen(cmd)); \
+		write(STDERR_FILENO, " not found \n", _strlen(" not found\n") +1); \
+	} while (0)
 
 #define TNNEW_LINE " \t\n"
 
@@ -59,17 +59,4 @@ void cd_f(char **command);
 void exit_(char **command, int status);
 void env_f(char **command);
 
-#endif
-
-/**
- * main: 1
- * readline: 0
- * token: 0
- * builtin:0
- * cd: 0
- * env: 0
- * exit: 0
- * getenv: 0
- * exicute : 0
- * pth : -1
-*/
+#endif /*SHELL_H*/
