@@ -77,6 +77,6 @@ extern char **environ;
 void cd_f(char **command);
 void exit_(char **command, int status);
 void env_f(char **command);
-char pth(const char *inputcommand)
+char pth(const char *inputcommand);
 
 #endif /*SHELL_H*/
