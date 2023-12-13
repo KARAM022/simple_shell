@@ -15,7 +15,13 @@ char *_getApTH(const char *inputcommand)
 	int i = 0;
 	while (inputcommand && inputcommand[i])
 	{
-		pth(inputcommand);
+		if (inputcommand[i] == '/')
+		{
+			if (stat(inputcommand, &st) == 0)
+				return (s_dup(inputcommand));
+			return (NULL);
+		}
+		i++;
 	}
 
 	PENVTH = my_getenv("PATH");
@@ -25,29 +31,7 @@ char *_getApTH(const char *inputcommand)
 
 	D = strtok(PENVTH, ":");
 
-	while (D)
-	{
-		FCDM = malloc(_strlen(D) + _strlen(inputcommand) + 2);
-
-		if (FCDM)
-		{
-			s_cpy(FCDM, D);
-			s_cat(FCDM, "/");
-
-			s_cat(FCDM, inputcommand);
-
-			if (stat(FCDM, &st) == 0)
-			{
-				free(PENVTH);
-				return (FCDM);
-			}
-
-			free(FCDM);
-			FCDM = NULL;
-			D = strtok(NULL, ":");
-		}
-	}
-
+	pth(FCDM, D)
 	free(PENVTH);
 	return NULL;
 }

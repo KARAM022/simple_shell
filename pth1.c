@@ -1,12 +1,28 @@
 #include "shell.h"
 
-char pth(const char *inputcommand)
+char *pth(char *FCDM, char *D)
 {
-    if (inputcommand[i] == '/')
+while (D)
+	{
+		FCDM = malloc(_strlen(D) + _strlen(inputcommand) + 2);
+
+		if (FCDM)
 		{
-			if (stat(inputcommand, &st) == 0)
-				return (s_dup(inputcommand));
-			return (NULL);
+			s_cpy(FCDM, D);
+			s_cat(FCDM, "/");
+
+			s_cat(FCDM, inputcommand);
+
+			if (stat(FCDM, &st) == 0)
+			{
+				free(PENVTH);
+				return (FCDM);
+			}
+
+			free(FCDM);
+			FCDM = NULL;
+			D = strtok(NULL, ":");
 		}
-		i++;
+	}
+
 }
