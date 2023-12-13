@@ -1,20 +1,28 @@
 #include "shell.h"
 
-char *readline(void) {
-    char *line = NULL;
-    size_t len = 0;
-    ssize_t n;
+/**
+ * readline - khkhk
+ * Return: khkhk
+ */
 
-    if (isatty(STDIN_FILENO)) {
-        write(STDOUT_FILENO, "$ ", 2);
-    }
+char *readline(void)
+{
+	char *line = NULL;
+	size_t len = 0;
+	ssize_t n;
 
-    n = getline(&line, &len, stdin);
+	if (isatty(STDIN_FILENO))
+	{
+		write(STDOUT_FILENO, "$ ", 2);
+	}
 
-    if (n == EOF) {
-        free(line);
-        return NULL;
-    }
+	n = getline(&line, &len, stdin);
 
-    return line;
+	if (n == EOF)
+	{
+		free(line);
+		return (NULL);
+	}
+
+	return (line);
 }
