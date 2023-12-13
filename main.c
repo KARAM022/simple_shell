@@ -10,7 +10,7 @@
 int main(int ac, char **av)
 {
 	Da_ta_s Dat_a;
-    
+
 	Dat_a.line_buff = NULL;
 	Dat_a.input = NULL;
 	Dat_a.status = 0;
@@ -25,7 +25,7 @@ int main(int ac, char **av)
 		{
 			if (isatty(2))
 				write(2, "\n", 1);
-			return Dat_a.status;
+			return (Dat_a.status);
 		}
 
 		Dat_a.count++;
