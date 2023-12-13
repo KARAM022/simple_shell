@@ -51,8 +51,10 @@ char *s_cat(char *dest, const char *src);
 int _strlen(const char *s);
 void reverse(char str[], int length);
 char *_itoa(int num, char *str, int base);
-int handle_builtin_commands(char **command, char **av, int idx, int status);
+int h_built_in(char **command, char **av, int idx, int status);
 char *s_cpy(char *dest, char *src);
 extern char **environ;
+
+int cd_f(char **command);
 
 #endif

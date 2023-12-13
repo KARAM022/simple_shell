@@ -27,6 +27,6 @@ write(2, "\n", 1);
 Dat_a.count++;
 Dat_a.input = _tokenit(Dat_a.line_buff);
 if (Dat_a.input)
-Dat_a.status = handle_builtin_commands(Dat_a.input, av, Dat_a.count, Dat_a.status);
+Dat_a.status = h_built_in(Dat_a.input, av, Dat_a.count, Dat_a.status);
 }
 }
