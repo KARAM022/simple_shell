@@ -11,7 +11,10 @@
 #include <sys/stat.h>
 
 /**
- * Da_ta_s - khkh
+ * @struct Da_ta_s
+ * @brief Represents data used in a shell application.
+ *
+ * This structure includes members for line buffer, input, status, and count.
  */
 
 typedef struct
