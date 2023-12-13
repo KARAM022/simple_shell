@@ -1,5 +1,4 @@
 #include "shell.h"
-
 /**
  * freearr - finction
  * @ar: var
@@ -8,6 +7,7 @@
 void freearr(char **ar)
 {
 	int k;
+
 	for (k = 0; ar[k] != NULL; k++)
 	{
 		free(ar[k]);
@@ -15,7 +15,6 @@ void freearr(char **ar)
 	}
 	free(ar);
 }
-
 /**
  * reverse - finction
  * @str: var
@@ -30,6 +29,7 @@ void reverse(char str[], int length)
 	while (start < end)
 	{
 		char temp = str[start];
+
 		str[start] = str[end];
 		str[end] = temp;
 		start++;
