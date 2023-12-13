@@ -24,6 +24,7 @@ typedef struct
 
 /**
  * EGETENV - khkh
+ * Description: khkh
  */
 
 typedef struct
