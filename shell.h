@@ -55,6 +55,7 @@ int h_built_in(char **command, char **av, int idx, int status);
 char *s_cpy(char *dest, char *src);
 extern char **environ;
 
+void cd_f(char **command);
 void exit_(char **command, int status);
 void env_f(char **command);
 
