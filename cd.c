@@ -1,7 +1,9 @@
 #include "shell.h"
 
-int cd_f(char **command,char cwd)
+int cd_f(char **command)
 {
+    char cwd[1024];
+    
     if (command[1] == NULL || _strcmp(command[1], "~") == 0)
     {
         if (chdir(getenv("HOME")) != 0)
