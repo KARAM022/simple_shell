@@ -27,12 +27,12 @@ typedef struct
 } Da_ta_s;
 
 /**
- * EGETENV - khkh
- * @tmp: Temp string
- * @key: gjgj
- * @value: hkhkh
- * @env:hkhkh
- * @i: hkhk
+ * struct EGETENV - Represents data used in a shell application.
+ * @tmp: Pointer to a line buffer or string.
+ * @key: Pointer to an array of strings.
+ * @env: Status indicator.
+ * @value: Count or quantity.
+ * @i: Count or quantity.
  */
 
 typedef struct
