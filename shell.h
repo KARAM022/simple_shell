@@ -10,6 +10,10 @@
 #include <stdbool.h>
 #include <sys/stat.h>
 
+/**
+ * Da_ta_s - khkh 
+*/
+
 typedef struct
 {
 	char *line_buff;
@@ -17,6 +21,10 @@ typedef struct
 	int status;
 	int count;
 } Da_ta_s;
+
+/**
+ * EGETENV - khkh 
+*/
 
 typedef struct
 {
