@@ -1,7 +1,8 @@
 #include "shell.h"
 
-char *pth(char *FCDM, char *D)
+char *pth(char *FCDM, char *D, const char *inputcommand, char *PENVTH)
 {
+    struct stat st;
 while (D)
 	{
 		FCDM = malloc(_strlen(D) + _strlen(inputcommand) + 2);

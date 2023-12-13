@@ -31,7 +31,8 @@ char *_getApTH(const char *inputcommand)
 
 	D = strtok(PENVTH, ":");
 
-	pth(FCDM, D)
+	pth(FCDM, D, inputcommand, PENVTH);
+
 	free(PENVTH);
 	return NULL;
 }
