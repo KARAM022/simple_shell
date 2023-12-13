@@ -16,7 +16,7 @@
  * @input: Pointer to an array of strings.
  * @status: Status indicator.
  * @count: Count or quantity.
- * 
+ *
  * Description: This structure holds data used in a shell application.
  */
 
