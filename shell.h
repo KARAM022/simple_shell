@@ -60,3 +60,7 @@ void exit_(char **command, int status);
 void env_f(char **command);
 
 #endif
+
+/**
+ * main: 1
+*/
