@@ -13,14 +13,14 @@ char **_tokenit(char *command_input)
 	int counter = 0;
 
 	if (!command_input)
-		return NULL;
+		return (NULL);
 
 	command_output = malloc(sizeof(char *) * 10);
 
 	if (!command_output)
 	{
 		free(command_input);
-		return NULL;
+		return (NULL);
 	}
 
 	token = strtok(command_input, " \t\n");
@@ -32,5 +32,5 @@ char **_tokenit(char *command_input)
 	free(command_input);
 
 	command_output[counter] = NULL;
-	return command_output;
+	return (command_output);
 }
