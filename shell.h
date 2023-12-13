@@ -69,6 +69,6 @@ void env_f(char **command);
  * cd: 0
  * env: 0
  * exit: 0
- * getenv: -1
+ * getenv: 0
  * exicute : -1
 */
