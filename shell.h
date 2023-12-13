@@ -63,4 +63,6 @@ void env_f(char **command);
 
 /**
  * main: 1
+ * readline: 0
+ * 
 */
