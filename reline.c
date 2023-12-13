@@ -1,25 +1,28 @@
 #include "shell.h"
+
 /**
- * readline - function readline
- * Return: char or null if an error or if eof is reched
+ * readline - function
+ * Return: char
  */
-#include "shell.h"
 
-char *readline(void) {
-    char *line = NULL;
-    size_t len = 0;
-    ssize_t n;
+char *readline(void)
+{
+	char *line = NULL;
+	size_t len = 0;
+	ssize_t n;
 
-    if (isatty(STDIN_FILENO)) {
-        write(STDOUT_FILENO, "$ ", 2);
-    }
+	if (isatty(STDIN_FILENO))
+	{
+		write(STDOUT_FILENO, "$ ", 2);
+	}
 
-    n = getline(&line, &len, stdin);
+	n = getline(&line, &len, stdin);
 
-    if (n == EOF) {
-        free(line);
-        return NULL;
-    }
+	if (n == EOF)
+	{
+		free(line);
+		return (NULL);
+	}
 
-    return line;
-}
+	return (line);
+
