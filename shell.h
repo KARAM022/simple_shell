@@ -66,5 +66,9 @@ void env_f(char **command);
  * readline: 0
  * token: 0
  * builtin:0
- * 
+ * cd: -1
+ * env: -1
+ * exit: -1
+ * getenv: -1
+ * exicute : -1
 */
