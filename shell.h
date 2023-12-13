@@ -37,7 +37,7 @@ typedef struct Da_ta_s
 
 typedef struct EGETENV
 {
-	char *tmp;   
+	char *tmp;
 	char *key;
 	char *value;
 	char *env;
