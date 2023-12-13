@@ -29,7 +29,7 @@ char *_itoa(int num, char *str, int base)
 	while (num != 0)
 	{
 		int remainder = num % base;
-        
+
 		str[i++] = (remainder > 9) ? (remainder - 10) + 'a' : remainder + '0';
 		num = num / base;
 	}
