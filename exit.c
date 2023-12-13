@@ -1,6 +1,6 @@
 #include "shell.h"
 
-void exit_(char **command)
+void exit_(char **command, int status)
 {
     int exit_status = 0;
 

@@ -55,6 +55,6 @@ int h_built_in(char **command, char **av, int idx, int status);
 char *s_cpy(char *dest, char *src);
 extern char **environ;
 
-void exit_(char **command);
+void exit_(char **command, int status);
 
 #endif

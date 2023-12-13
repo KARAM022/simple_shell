@@ -49,7 +49,7 @@ int h_built_in(char **command, char **av, int idx, int status)
     }
     else if (_strcmp(command[0], "exit") == 0)
     {
-        exit_(char **command);
+        exit_(command);
     }
     else if (_strcmp(command[0], "env") == 0)
     {
