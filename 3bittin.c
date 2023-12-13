@@ -53,15 +53,8 @@ int h_built_in(char **command, char **av, int idx, int status)
     }
     else if (_strcmp(command[0], "env") == 0)
     {
-        char **env = environ;
-
-        while (*env != NULL)
-        {
-            write(STDOUT_FILENO, *env, strlen(*env));
-            write(STDOUT_FILENO, "\n", 1);
-            env++;
-        }
-        freearr(command);
+        env_f(command);
+        
         return 0;
     }
     return execute(command, av, idx);

@@ -56,5 +56,6 @@ char *s_cpy(char *dest, char *src);
 extern char **environ;
 
 void exit_(char **command, int status);
+void env_f(char **command);
 
 #endif
