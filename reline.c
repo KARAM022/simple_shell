@@ -5,19 +5,19 @@
  */
 char *readline(void)
 {
-char *buffofline = NULL;
-size_t sizeofle = 0;
+char *line = NULL;
+size_t len = 0;
 ssize_t rb;
 
 if (isatty(STDIN_FILENO))
 {
 write(STDOUT_FILENO, "$ ", 2);
 }
-rb = getline(&buffofline, &sizeofle, stdin);
+rb = getline(&line, &len, stdin);
 if (rb == EOF)
 {
-free(buffofline);
+free(line);
 return (NULL);
 }
-return (buffofline);
+return (line);
 }
