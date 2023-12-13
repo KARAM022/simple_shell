@@ -12,7 +12,7 @@ char *s_dup(const char *str)
 	int x, y;
 
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 
 	x = 0;
 	while (str[x] != '\0')
@@ -20,11 +20,11 @@ char *s_dup(const char *str)
 
 	k = malloc(sizeof(char) * (x + 1));
 	if (k == NULL)
-		return NULL;
+		return (NULL);
 
 	for (y = 0; str[y]; y++)
 		k[y] = str[y];
 	k[y] = '\0';
 
-	return k;
+	return (k);
 }

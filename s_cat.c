@@ -25,5 +25,5 @@ char *s_cat(char *dest, const char *src)
 
 	*dest = '\0';
 
-	return originalDest;
+	return (originalDest);
 }
