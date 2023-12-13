@@ -21,11 +21,11 @@ char *my_getenv(char *vari)
 			ENV.env = s_dup(ENV.value);
 
 			free(ENV.tmp);
-			return ENV.env;
+			return (ENV.env);
 		}
 
 		free(ENV.tmp), ENV.tmp = NULL;
 	}
 
-	return NULL;
+	return (NULL);
 }
