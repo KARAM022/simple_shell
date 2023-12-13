@@ -11,13 +11,7 @@
 #include <sys/stat.h>
 
 /**
- * struct Da_ta_s - Represents data used in a shell application.
- * @line_buff: Pointer to a line buffer or string.
- * @input: Pointer to an array of strings.
- * @status: Status indicator.
- * @count: Count or quantity.
- *
- * Description: This structure holds data used in a shell application.
+ * betty Da_ta_s
  */
 
 typedef struct
@@ -29,13 +23,7 @@ typedef struct
 } Da_ta_s;
 
 /**
- * typedef struct EGETENV - Represents data used in a shell application.
- * @tmp: Pointer to a line buffer or string.
- * @key: Pointer to an array of strings.
- * @env: Status indicator.
- * @value: Count or quantity.
- * @i: Count or quantity.
- * Description: khhk
+ * betty EGETENV
  */
 
 typedef struct
