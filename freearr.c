@@ -7,13 +7,13 @@
 */
 void freearr(char **ar)
 {
-    int k;
-    for (k = 0; ar[k] != NULL; k++)
-    {
-        free(ar[k]);
-        ar[k] = NULL;
-    }
-    free(ar);
+	int k;
+	for (k = 0; ar[k] != NULL; k++)
+	{
+		free(ar[k]);
+		ar[k] = NULL;
+	}
+	free(ar);
 }
 
 /**
@@ -24,15 +24,15 @@ void freearr(char **ar)
 */
 void reverse(char str[], int length)
 {
-    int start = 0;
-    int end = length - 1;
+	int start = 0;
+	int end = length - 1;
 
-    while (start < end)
-    {
-        char temp = str[start];
-        str[start] = str[end];
-        str[end] = temp;
-        start++;
-        end--;
-    }
+	while (start < end)
+	{
+		char temp = str[start];
+		str[start] = str[end];
+		str[end] = temp;
+		start++;
+		end--;
+	}
 }
