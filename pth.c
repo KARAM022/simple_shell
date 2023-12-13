@@ -33,6 +33,6 @@ char *_getApTH(const char *inputcommand)
 
 	pth(FCDM, D, inputcommand, PENVTH);
 
-	// free(PENVTH);
+	free(PENVTH);
 	return NULL;
 }
