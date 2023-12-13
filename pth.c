@@ -15,7 +15,7 @@ char *_getApTH(const char *inputcommand)
 	int i = 0;
 	while (inputcommand && inputcommand[i])
 	{
-		pth(inputcommand);
+		return pth(inputcommand);
 	}
 
 	PENVTH = my_getenv("PATH");
