@@ -24,7 +24,11 @@ typedef struct
 
 /**
  * EGETENV - khkh
- * Description: khkh
+ * @tmp: Temp string
+ * @key: gjgj
+ * @value: hkhkh
+ * @env:hkhkh
+ * @i: hkhk
  */
 
 typedef struct
