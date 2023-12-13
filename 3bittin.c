@@ -6,7 +6,7 @@ int h_built_in(char **command, char **av, int idx, int status)
 
     if (_strcmp(command[0], "cd") == 0)
     {
-        int cd_f(char **command);
+        int cd_f(char **command, char cwd);
     }
     else if (_strcmp(command[0], "exit") == 0)
     {

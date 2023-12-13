@@ -1,6 +1,6 @@
 #include "shell.h"
 
-int cd_f(char **command)
+int cd_f(char **command,char cwd)
 {
     if (command[1] == NULL || _strcmp(command[1], "~") == 0)
     {
