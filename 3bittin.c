@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * h_built_in - khkh
- * @command: khhkk
- * @av: hkkhhk
- * @idx: hkkh
- * @status: khkhkh
- * Return: hkhkhk
+ * h_built_in - function
+ * @command: variable
+ * @av: variable
+ * @idx: variable
+ * @status: variable
+ * Return: int
  */
 
 int h_built_in(char **command, char **av, int idx, int status)

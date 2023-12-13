@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * _tokenit - khkhkh
- * @command_input: hkhkhk
- * Return: khkhk
+ * _tokenit - function
+ * @command_input: variable
+ * Return: char
  */
 
 char **_tokenit(char *command_input)

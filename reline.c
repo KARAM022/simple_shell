@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * readline - khkhk
- * Return: khkhk
+ * readline - function
+ * Return: char
  */
 
 char *readline(void)

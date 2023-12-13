@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * execute - khkh
- * @command:khkhkhk
- * @av: khkhkhk
- * @idx:khkhkhk
- * Return: khkhkh
+ * execute - function
+ * @command:variable
+ * @av: variable
+ * @idx:variable
+ * Return: int
  */
 
 int execute(char **command, char **av, int idx)

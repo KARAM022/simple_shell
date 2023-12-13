@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * cd_f - khkhk
- * @command:khkhkh
- * Return: hkhkk
+ * cd_f - function
+ * @command: variable
+ * Return: void
  */
 
 void cd_f(char **command)

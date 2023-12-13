@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * env_f - khkhk
- * @command:hkhkh
- * Return: hkhk
+ * env_f - function
+ * @command:variable
+ * Return: void
  */
 
 void env_f(char **command)

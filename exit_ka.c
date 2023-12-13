@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * exit_ - akhkhk
- * @command:khkhkh
- * @status: khkhkh
- * Return: hkhkh
+ * exit_ - function
+ * @command:variable
+ * @status: variable
+ * Return: void
  */
 
 void exit_(char **command, int status)

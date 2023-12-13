@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * my_getenv - khkhhkk
- * @vari:khhkkh
- * Return: khkhkh
+ * my_getenv - function
+ * @vari:variable
+ * Return: char
  */
 
 char *my_getenv(char *vari)
