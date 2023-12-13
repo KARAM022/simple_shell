@@ -28,7 +28,7 @@ typedef struct
 } EGETENV;
 
 #define PRINT_ERROR(name, index, cmd)\
-	do{\
+	do {\
 		write(STDERR_FILENO, name, _strlen(name));\
 		write(STDERR_FILENO, ": ", 2);\
 		write(STDERR_FILENO, index, _strlen(index));\
