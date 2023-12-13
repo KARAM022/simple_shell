@@ -49,17 +49,7 @@ int h_built_in(char **command, char **av, int idx, int status)
     }
     else if (_strcmp(command[0], "exit") == 0)
     {
-        int exit_status = 0;
-
-        if (command[1] != NULL)
-        {
-            exit_status = atoi(command[1]);
-        }
-        else
-            exit_status = status;
-
-        freearr(command);
-        exit(exit_status);
+        exit_(char **command);
     }
     else if (_strcmp(command[0], "env") == 0)
     {
