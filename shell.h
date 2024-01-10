@@ -11,11 +11,11 @@
 #include <sys/stat.h>
 
 /**
- * struct Da_ta_s - struct
- * @line_buff: store inpute line
- * @input: arry of token input
- * @status: current status code of the shell program
- * @count: counter for the number of input lines processed
+ * struct Da_ta_s - bla bla
+ * @line_buff: bla bla
+ * @input: bla bla
+ * @status: bla bla
+ * @count: bla bla
  */
 
 typedef struct Da_ta_s
@@ -27,12 +27,12 @@ typedef struct Da_ta_s
 } Da_ta_s;
 
 /**
- * struct EGETENV - struct
- * @tmp: Temp string
- * @key: Key from env
- * @value: Value from env
- * @env: Env var value
- * @i: Loop counter
+ * struct EGETENV - bla bla
+ * @tmp: bla bla
+ * @key: bla bla
+ * @value: bla bla
+ * @env: bla bla
+ * @i: bla bla
  */
 
 typedef struct EGETENV
@@ -56,26 +56,26 @@ typedef struct EGETENV
 
 #define TNNEW_LINE " \t\n"
 
-char *readline(void);
-char **_tokenit(char *command_input);
-char *s_dup(const char *str);
-int _strcmp(const char *s1, const char *s2);
-int execute(char **command, char **av, int idx);
-void freearr(char **ar);
+char *readline_aa(void);
+char **_tokenit_aa(char *command_input);
+char *s_dup_aa(const char *str);
+int _strcmp_aa(const char *s1, const char *s2);
+int execute_aa(char **command, char **av, int idx);
+void freearr_aa(char **ar);
 
-char *my_getenv(char *vari);
-void printerror(const char *name, const char *cmd, int idx);
+char *my_getenv_aa(char *vari);
+void printerror_aa(const char *name, const char *cmd, int idx);
 char *_getApTH(const char *command);
-char *s_cat(char *dest, const char *src);
+char *s_cat_aa(char *dest, const char *src);
 int _strlen(const char *s);
 void reverse(char str[], int length);
-char *_itoa(int num, char *str, int base);
-int h_built_in(char **command, char **av, int idx, int status);
-char *s_cpy(char *dest, char *src);
+char *_itoa_aa(int num, char *str, int base);
+int h_built_in_aa(char **command, char **av, int idx, int status);
+char *str_cpy(char *dest, char *src);
 extern char **environ;
 
-void cd_f(char **command);
-void exit_(char **command, int status);
-void env_f(char **command);
+void cd_fun(char **command);
+void exit_aa(char **command, int status);
+void env_fun(char **command);
 
 #endif /*SHELL_H*/
