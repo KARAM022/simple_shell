@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * main - bla bla
- * @ac:bla bla
- * @av: bla bla
- * Return: bla bla
+ * main - arguments function
+ * @ac:count of argumnents
+ * @av: arguments arayy
+ * Return: the shell program status
  */
 
 int main(int ac, char **av)
@@ -20,7 +20,7 @@ int main(int ac, char **av)
 
 	while (true)
 	{
-		Dat_a.line_buff = readline_aa();
+		Dat_a.line_buff = read_line_aa();
 		if (!Dat_a.line_buff)
 		{
 			if (isatty(2))
@@ -29,8 +29,8 @@ int main(int ac, char **av)
 		}
 
 		Dat_a.count++;
-		Dat_a.input = _tokenit_aa(Dat_a.line_buff);
+		Dat_a.input = _tokenit(Dat_a.line_buff);
 		if (Dat_a.input)
-			Dat_a.status = h_built_in_aa(Dat_a.input, av, Dat_a.count, Dat_a.status);
+			Dat_a.status = h_built_in(Dat_a.input, av, Dat_a.count, Dat_a.status);
 	}
 }
